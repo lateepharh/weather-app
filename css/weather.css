@@ -22,7 +22,6 @@ body {
   body {
     overflow-x: hidden;
     width: 100vw;
-    height: fit-content;
     background-image: url(../imag/image.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,6 +57,7 @@ input {
 }
 @media (max-width: 800px) {
   input {
+    width: 300px;
     border: 1px solid white;
     border-radius: 15px;
   }
@@ -66,6 +66,10 @@ input {
 input::placeholder {
   font-size: 14px;
   text-transform: capitalize;
+}
+
+input:focus {
+  color: white;
 }
 
 .detail {
@@ -88,6 +92,13 @@ input::placeholder {
   padding: 20px 0;
   position: absolute;
 }
+@media (max-width: 800px) {
+  .search-btn {
+    position: relative;
+    border-radius: 15px;
+    width: 30px;
+  }
+}
 
 .weather-data-container, .weather-errors {
   display: grid;
@@ -109,7 +120,7 @@ input::placeholder {
 }
 
 .location {
-  color: grey;
+  color: white;
   padding: 10px 0;
   text-transform: capitalize;
   display: flex;
@@ -131,9 +142,16 @@ input::placeholder {
   display: flex;
   gap: 10px;
 }
+@media (max-width: 800px) {
+  .locality-info {
+    position: relative;
+    padding: 30px 0;
+  }
+}
 
 .info {
   display: flex;
+  color: #fff;
   gap: 8px;
 }
 .info img {
@@ -166,40 +184,18 @@ input::placeholder {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
   padding: 20px 45px 0 45px;
 }
-
-h1, h2, .w-title {
+h1, h2 {
   color: #fff;
+}
+@media (max-width: 800px) {
+  h1, h2 {
+    font-size: 15px;
+  }
 }
 
 .w-title {
   position: relative;
+  color: #fff;
   left: 70px;
-}
-
-.reponsive {
-  display: none;
-}
-@media (max-width: 800px) {
-  .reponsive {
-    display: block;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
-    padding: 20px 45px 0 45px;
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-  }
-  .reponsive .search-btnn {
-    font-size: 16px;
-    border: 1px solid rgb(146, 106, 32);
-    background-color: orange;
-    height: fit fit-content;
-    width: fit-content;
-    outline: none;
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 10px 20px;
-  }
+  padding: 10px 0;
 }/*# sourceMappingURL=weather.css.map */
