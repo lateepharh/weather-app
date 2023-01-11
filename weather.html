@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/weather.css">
+   <link rel="stylesheet" href="http://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <!-- <script src="./weather.js"></script> -->
+</head>
+<body onloadstart="myFunc()">
+    <!-- <div class="reponsive">
+        <div class="logo">
+            <h3 class="w-titles">Lati.weather</h3>
+        </div>
+        <div class="under">
+            <h1 id="times"></h1>
+            <h1 class="clock" id="digitals" onload="showTime()"></h1>
+            <div class="locality" id="localitys">
+            </div>
+        </div>
+        <div class="input-con">
+            <input type="text" name="input" id="inputs" placeholder="Search for a location...">
+            <button class="search-btnn" id="search-btnn">Search</button>
+        </div>
+         Weather Data 
+        <div class="detail">
+            <h2>Weather Details</h2>
+        </div>
+        <div class="weather-data-container"></div>
+        Error dissplay 
+        <div class="weather-errors">
+            <p class="text-error"></p>
+        </div>
+       
+    </div> -->
+    <div class="weather-container">
+        <div class="content-title">
+            <h3 class="w-title">lati.weather</h3>
+            <h1 id="time"></h1>
+            <h1 class="clock" id="digital" onload="showTime()"></h1>
+            <div class="locality-info">
+                <div class="locality" id="locality">
+                </div>
+                <div class="locality-deg" id="locality-deg"></div>
+            </div>
+        </div>
+    
+       <div class="card">
+            <!-- Input cont -->
+            <div class="input-cont">
+                <input type="text" name="input" id="input" placeholder="Search for a location...">
+                <i class="bx bx-search search-btn" id="search-btn"></i>
+            </div>
+            <div class="location">
+                <p id="onclick" onload="myFunction()">Edinburg</p>
+                <div id="info"></div>
+            </div>
+           <!-- Weather Data -->
+            <div class="detail">
+                <h2>Weather Details</h2>
+            </div>
+            <div class="weather-data-container"></div>
+            <!-- Error dissplay -->
+            <div class="weather-errors">
+                <p class="text-error"></p>
+            </div>
+       </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
