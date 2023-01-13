@@ -80,7 +80,7 @@ input:focus {
 }
 
 .search-btn {
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid rgb(146, 106, 32);
   background-color: orange;
   height: 65px;
@@ -96,7 +96,10 @@ input:focus {
   .search-btn {
     position: relative;
     border-radius: 15px;
-    width: 30px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    font-size: 18px;
   }
 }
 
